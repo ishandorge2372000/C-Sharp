@@ -22,13 +22,14 @@ namespace LinqTest
             {
                 Console.WriteLine(s);
             }
-            Console.ReadKey();
-            /*
-             output :
-             Fallout 3
-             Morrowind
-             System Shock 2
-             */
+            Console.ReadKey();            
         }
     }
 }
+/*
+     output :
+     Fallout 3
+     Morrowind
+     System Shock 2
+*/
+--------------------------------------------------------------------------------------------------------------
