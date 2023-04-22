@@ -68,4 +68,49 @@ namespace LinqTest
              VideoGame : System Shock 2
              VideoGame : Uncharted 2
 */
-//----------------------------------------------------------------------------------------------------------------------------
+//The same code can be written without using Linq as----------------------------------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.Design;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LinqTest
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] currentVideoGames = { "Morrowind", "Uncharted 2", "Fallout 3", "Daxter", "System Shock 2" };
+
+            //if we write the same code without Linq
+
+            string[] gamesWithSpaces = new string[5];
+            int j = 0;
+
+            for(int i=0 ; i < currentVideoGames.Length ; i++)
+            {
+                if (currentVideoGames[i].Contains(" "))
+                {
+                    gamesWithSpaces[j++] = currentVideoGames[i];
+                }
+            }
+
+            foreach(string game in gamesWithSpaces)
+            {
+                Console.WriteLine(game);
+            }
+            
+            Console.ReadKey();
+            
+        }
+    }
+}
+/*
+Uncharted 2
+Fallout 3
+System Shock 2
+ */
+//-------------------------------------------------------------------------------------------------------------
