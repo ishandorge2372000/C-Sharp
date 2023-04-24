@@ -164,4 +164,19 @@ Mary
 Melvin
  */
 ------------------------------------------------------------------------------
-    
+//Union :
+ public class Program
+    {
+        static void DisplayUnion()
+        {
+            List<string> myCars = new List<String> { "Yugo", "Aztec", "BMW" };
+            List<string> yourCars = new List<String> { "BMW", "Saab", "Aztec" };
+            // Get the union of these containers.
+            var carUnion = (from c in myCars select c).Union(from c2 in yourCars select c2);
+            Console.WriteLine("Here is everything:");
+            foreach (string s in carUnion)
+                Console.WriteLine(s); // Prints all common members.
+            Console.ReadKey();
+        }
+    }
+-----------------------------------------------------------------------------------
