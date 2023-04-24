@@ -1,3 +1,12 @@
+//The below class has been refered in multiple programs
+ public class Car
+    {
+        public string PetName { get; set; } = "";
+        public string Color { get; set; } = "";
+        public int Speed { get; set; }
+        public string Make { get; set; } = "";
+    }
+-----------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -114,3 +123,45 @@ Fallout 3
 System Shock 2
  */
 //-------------------------------------------------------------------------------------------------------------
+public class Program
+    {
+        static void Main(string[] args)
+        {
+            var myCars = new List<Car>()
+            {
+                new Car() { PetName = "Daisy", Color = "Silver", Speed = 100, Make = "BMW"},
+                new Car(){ PetName = "Henry", Color = "Tan", Speed = 90, Make = "BMW"},
+                new Car(){ PetName = "Mary", Color = "Black", Speed = 110, Make = "VW"} 
+            };
+
+            myCars.Add(new Car() { PetName = "Clunker", Color = "Rust", Speed = 55, Make = "VW" });
+
+            myCars.Add(new Car() { PetName = "Melvin", Color = "White", Speed = 99, Make = "Ford" });
+
+            GetFastCars(myCars);
+            Console.ReadKey();
+        }
+
+        static void GetFastCars(List<Car> myCars)
+        {
+            var fastCars = from cars in myCars 
+                           where cars.Speed > 95 
+                           select cars;
+
+            Console.WriteLine("Cars with Fast Speed :");
+            foreach(var fastCar in fastCars)
+            {
+                Console.WriteLine(fastCar.PetName);
+            }
+        }
+    }
+}
+
+/*
+ Cars with Fast Speed :
+Daisy
+Mary
+Melvin
+ */
+------------------------------------------------------------------------------
+    
