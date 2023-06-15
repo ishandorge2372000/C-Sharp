@@ -1,0 +1,12 @@
+D:\C#\InputOutputWithJson\InputOutputWithJson\bin\Debug\InputOutputWithJson.exe.config
+D:\C#\InputOutputWithJson\InputOutputWithJson\bin\Debug\InputOutputWithJson.exe
+D:\C#\InputOutputWithJson\InputOutputWithJson\bin\Debug\InputOutputWithJson.pdb
+D:\C#\InputOutputWithJson\InputOutputWithJson\obj\Debug\InputOutputWithJson.csproj.AssemblyReference.cache
+D:\C#\InputOutputWithJson\InputOutputWithJson\obj\Debug\InputOutputWithJson.csproj.SuggestedBindingRedirects.cache
+D:\C#\InputOutputWithJson\InputOutputWithJson\obj\Debug\InputOutputWithJson.csproj.CoreCompileInputs.cache
+D:\C#\InputOutputWithJson\InputOutputWithJson\obj\Debug\InputOutputWithJson.exe
+D:\C#\InputOutputWithJson\InputOutputWithJson\obj\Debug\InputOutputWithJson.pdb
+D:\C#\InputOutputWithJson\InputOutputWithJson\bin\Debug\Student.json
+D:\C#\InputOutputWithJson\InputOutputWithJson\bin\Debug\Newtonsoft.Json.dll
+D:\C#\InputOutputWithJson\InputOutputWithJson\bin\Debug\Newtonsoft.Json.xml
+D:\C#\InputOutputWithJson\InputOutputWithJson\obj\Debug\InputOutputWithJson.csproj.CopyComplete
